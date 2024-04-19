@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adivina el número</title>
+</head>
+<body>
+<h1>Adivina el número secreto entre 1 y 100</h1>
+<input type="number" id="guess" min="1" max="100">
+<button onclick="checkGuess()">Adivinar</button>
+
+<script>
+    const secretNumber = Math.floor(Math.random() * 100) + 1;
+
+    function checkGuess() {
+        const guess = parseInt(document.getElementById('guess').value);
+
+        if (guess === secretNumber) {
+            alert('¡Felicidades! Adivinaste el número secreto.');
+        } else if (guess < secretNumber) {
+            alert('El número secreto es mayor. Intenta de nuevo.');
+        } else {
+            alert('El número secreto es menor. Intenta de nuevo.');
+        }
+    }
+</script>
+</body>
+</html>
