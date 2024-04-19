@@ -1,0 +1,22 @@
+SOLUCION:
+PREGUNTAS:
+1. `==` comprueba la igualdad de valor, `===` comprueba la igualdad de valor y tipo.
+2. `switch` es una estructura para ejecutar código diferente según el valor de una expresión.
+3. Un array guarda múltiples valores, un objeto guarda pares clave-valor.
+Array:
+let Array = [1, 2, 3, 4, 5];
+Objeto:
+let Object = { 
+  nombre: "Juan", 
+  edad: 30, 
+  ciudad: "Madrid" 
+};
+
+4. El operador ternario es una forma de escribir una expresión condicional en una línea.
+let edad = 18;
+let status = (edad >= 18) ? "Adulto" : "Menor de edad";
+console.log(status); 
+
+5. Los operadores de comparación evalúan si una condición es verdadera o falsa. 
+console.log(10 <= 5); 
+console.log("apple" === "orange");
